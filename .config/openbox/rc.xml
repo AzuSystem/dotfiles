@@ -687,7 +687,18 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-<!-- s -->
+    <application title="Azura Desktop" type="normal">
+      <skip_taskbar>true</skip_taskbar>
+      <shading>false</shading>
+      <stick>false</stick>
+      <layer>below</layer>
+      <!-- This sends the window to the bottom layer -->
+    </application>
+    <application class="azuos-dock">
+      <layer>above</layer>
+      <maximized>no</maximized>
+    </application>
+    <!-- s -->
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
